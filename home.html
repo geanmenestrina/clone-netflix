@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Início - Netflix</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./src/img/movies/icon-netflix.png" />
+	<link href="./src/css/homeStyle.css" rel="stylesheet" type="text/css" />
+  <link href="./src/css/mobile.css" rel="stylesheet" type="text/css" />
+	<script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="header-netflix">
+		<div class="menu-netflix">
+			<h1>
+				<img src="./src/img/movies/logo.png" alt="Logo da Netflix">
+      </h1>
+      <nav class="navigation">
+        <ul>
+          <li>Inicio</li>
+          <li>Séries</li>
+          <li>Filmes</li>
+          <li>Minha lista</li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Container com Banner inicial -->
+  <main class="hero-image-wrapper section">
+    <section class="grid-hero grid-size">
+      <div class="hero-description">
+        <h2>O menino que descobriu o vento</h2>
+        <p>
+          Inspirado por um livro de ciências, um garoto constrói uma turbina eólica
+          para salvar seu vilarejo da fome. Baseado em uma história real. 
+        </p>
+        <button><a href="#open-modal">Trailer</a></button>
+        <!-- Trailer -->
+        <div class="modal-container" id="open-modal">
+          <div class="modal">
+            <a href="#" class="close-modal">X</a>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nPkr9HmglG0" title="YouTube video player" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Lista de Filmes -->
+  <section class="popular-movies">
+
+  <h3>Populares na Netflix</h3>
+  <section class="movies-list">
+    <div class="movie">
+      <img src="./src/img/movies/django.jpg" alt="">
+    </div>
+    <div class="movie">
+      <img src="./src/img/movies/gotam.jpg" alt="">
+    </div>
+    <div class="movie">
+      <img src="./src/img/movies/maluco.jpg" alt="">
+    </div>
+    <div class="movie">
+      <img src="./src/img/movies/lucifer.jpg" alt="">
+    </div>
+    <div class="movie">
+      <img src="./src/img/movies/tropa.jpg" alt="">
+    </div>
+  </section> 
+  </section>
+  <script src="script.js"></script>
+  </body>
+</html>

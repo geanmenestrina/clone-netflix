@@ -1,0 +1,217 @@
+:root{
+    --bg-color: #141414;
+    --primary-color: #FFFFFF;
+    --second-color: #818181eb;
+    --font: 'Roboto', sans-serif;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+  }
+  
+  /* Início Header */
+  .header-netflix{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.57);
+    box-shadow: 0 0 3px var(--bg-color);
+  }
+  
+  .menu-netflix{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  h1 img{
+    width: 100px;
+    height: 35px;
+    margin: 20px 70px;
+  }
+  
+  .navigation ul {
+    display: flex;
+    padding-right: 3rem;
+    padding-top: 1.8rem;
+  }
+  
+  .navigation ul li, li a {
+      list-style: none;
+      padding-right: 1.5rem;
+      font-size: 15px;
+      cursor: pointer;
+      color: var(--primary-color);
+      font-family: var(--font);
+      font-weight: 600;
+      text-decoration: none;
+  }
+  
+  .navigation ul li:hover{
+    transition: 300ms all ease-in-out;
+    color: var(--second-color);
+  }
+  /* Fim Header */
+  
+  /* Início Container */
+  .netflix-container{
+    width: 100%;
+    height: 90vh;
+  }
+  
+  main.section{
+    max-height: 85vh;
+  }
+  
+  .hero-image-wrapper{
+    background-image: url(../img/movies/hero.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .grid-size{
+    max-width: 85vw;
+    margin: 0 auto;
+  }
+  
+  section.grid-hero{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3px;
+    min-height: 85vh;
+  }
+  
+  .hero-description{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-family: var(--font);
+    color: var(--primary-color);
+    padding-bottom: 13px;
+    padding-left: 10px;
+    font-weight: 800;
+  }
+  
+  p {
+    font-size: 17px;
+    font-family: var(--font);
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  button {
+    position: relative;
+    width: 13rem;
+    border-radius: .3rem;
+    padding: .8rem;
+    font-size: 17px;
+    font-family: var(--font);
+    font-weight: 800;
+    background: var( --primary-color);
+    cursor: pointer;
+  }
+  
+  button a{
+    text-decoration: none;
+    color: var( --second-color);
+  }
+  
+  button:hover{
+    transition: 300ms all ease-in-out;
+    transform: scale(1.01);  
+  }
+  
+  button::before{
+      content: "";
+      background-image: url(../img/movies/icon-movie.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      width: 15px;
+      height: 25px;
+      left: 50px;
+      top: 15px;
+  }
+  /* Fim Container */
+  
+  /*Início de lista de filmes*/
+  section.popular-movies{
+    background-color: var(--bg-color);
+    box-shadow: 0 0 3px var(--bg-color);
+  }
+  
+  section.movies-list{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  h3{
+    font-family: var(--font);
+    color: var(--primary-color);
+    padding-top: 30px;
+    margin-left: 20px; 
+  }
+  
+  div.movie img{
+    width: 245px;
+    height: 137px;
+    background: var(--second-color);
+    margin: 10px;
+  }
+  /* Fim de lista de filmes */
+  
+  /* Início Modal */
+  div.modal-container{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  div.modal{
+    margin: 160px auto;
+    width: 549px;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .close-modal{
+    position: absolute;
+    right: -16px;
+    top: -20px;
+    background: var(--second-color);
+    padding: 0.3rem 0.5rem;;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: var(--font);
+    border-radius: 3px;
+  }
+  
+  .modal-container{
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .modal-container:target{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .6s, opacity .5s;
+  }
+  
+  /*Fim Modal*/
